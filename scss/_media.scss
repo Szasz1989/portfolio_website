@@ -4,13 +4,21 @@
     height: 30rem;
 
     .header-content {
-      padding-top: 5rem;
+      padding-top: 18%;
+
+      h1 {
+        font-size: 1.5rem;
+      }
     }
   }
 }
 
 // Smartphones
 @media (max-width: 500px) {
+  #logo {
+    margin-top: 0rem;
+  }
+
   #main-nav {
     flex-direction: column;
     align-items: center;
@@ -33,6 +41,7 @@
 
     &-inner {
       height: 10rem;
+      background-position: 20% 70%;
     }
   }
 
@@ -59,12 +68,6 @@
         }
       }
     }
-
-    &-b {
-      .stats div {
-        padding: 2rem 0 1rem 0;
-      }
-    }
   }
 
   // About
@@ -73,15 +76,8 @@
       .about-info {
         grid-template-areas:
           'bioimage'
-          'bio'
-          'aw1'
-          'aw2'
-          'aw3';
+          'bio';
       }
-    }
-
-    &-c {
-      display: none;
     }
   }
 

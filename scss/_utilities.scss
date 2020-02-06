@@ -20,22 +20,22 @@
     color: #333;
     background-color: $main-color;
   }
-
   &-light {
     @extend %btn-shared;
     color: #333;
     background-color: $light-color;
   }
-
   &-dark {
     @extend %btn-shared;
     color: #f4f4f4;
     background-color: $dark-color;
   }
 }
+a[class^='btn-']:hover {
+  background-color: $light-color;
+}
 
 button[class^='btn-']:hover,
-a[class^='btn-']:hover,
 input[class^='btn-']:hover {
   background-color: $main-color;
 }
@@ -107,7 +107,6 @@ input[class^='btn-']:hover {
   padding-bottom: 0.5rem;
   text-align: center;
   font-weight: 100;
-  text-transform: uppercase;
 }
 
 .bottom-line {
